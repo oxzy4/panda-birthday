@@ -45,9 +45,9 @@ section{padding:65px 0}.section-title{font-size:clamp(30px,6vw,43px);font-weight
 // PERSONALIZE THESE SETTINGS before publishing:
 const CONFIG = {
   // Enter the secret date as digits, e.g. "14022026" for 14 Feb 2026.
-  passcode: "DDMMYYYY",
+  passcode: "2066",
   // Enter birthday as YYYY-MM-DD, e.g. "2026-12-05".
-  birthday: "YYYY-MM-DD"
+  birthday: "2009-11-20"
 };
 function unlock(){const v=document.getElementById('passcode').value.replace(/\D/g,'');if(v===CONFIG.passcode.replace(/\D/g,'')){document.getElementById('gate').classList.add('hidden');document.getElementById('site').classList.remove('hidden');hearts(18);updateCountdown()}else{document.getElementById('error').textContent='Not quite! Try the special date again ♡'}}
 document.getElementById('passcode').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
